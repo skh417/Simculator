@@ -15,7 +15,7 @@
       <input class="cal-display"type="text" readonly></input>
       <input class="cal-result" type="text" readonly></input>
       <div class="button-container">
-        <button  onclick="resetData()">C</button>
+        <button onclick="resetData()">C</button>
         <button onclick="deleteData()">DEL</button>
         <button onclick="inputData('%')">%</button>
         <button onclick="inputData('*')">*</button>
@@ -39,8 +39,8 @@
         <button onclick="inputData('-')">-</button>
       </div>
       <div class="button-container">
-        <button class="zero">0</button>
-        <button class="dot" onclick="inputData('.')">.</button>
+        <button onclick="inputData(0)">0</button>
+        <button onclick="inputData('.')">.</button>
         <button class="equal" style="width:135px;" onclick="calculation()">=</button>
       </div>
     </div>
