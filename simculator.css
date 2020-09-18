@@ -1,0 +1,55 @@
+:root {
+  --main-border-color: #182C61;
+}
+
+body {
+  margin: 0;
+  padding: 10px 100px;
+}
+
+#cal-container {
+  display: flex;
+  flex-direction: column;
+  border: 4px solid var(--main-border-color);
+  border-radius: 4px;
+  width: 300px;
+  height: 500px;
+}
+
+#cal-container div:nth-last-child(1) {
+  border: none;
+}
+
+.cal-display, .cal-result {
+  height: 30px;
+  border: none;
+  outline: none;
+  text-align: end;
+  text-overflow: ellipsis;
+  overflow: visible;
+  font-size: 50px;
+}
+
+.cal-display, .cal-result, .button-container {
+  border-bottom: 2px solid var(--main-border-color);
+  flex: 1 1 auto;
+}
+
+.button-container {
+  display: flex;
+}
+
+.button-container button {
+  width: 20%;
+  flex-grow: 1;
+  max-height: 100%;
+  margin: 1px;
+  border:none;
+  border-radius: 0;
+  outline: none;
+  background-color: var(--main-border-color);
+  color:white;
+  font-size: 16px;
+  cursor: pointer;
+  }
+
